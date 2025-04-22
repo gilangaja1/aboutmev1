@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilang Aditya - Web Developer Designer</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/locomotive-scroll"></script>
+</head>
+<!-- Pilihan Tema -->
+<div id="theme-selector" title="Pilih Tema">
+    <button class="theme-button" data-theme="default">Default</button>
+    <button class="theme-button" data-theme="dark">Dark</button>
+</div>
+
+<body id="main-container">
+    <div id="navbar">
+        <div class="container">
+            <a href="#header" class="logo">Gilang Aditya</a>
+            <div id="burger-menu">☰</div>
+
+            <ul id="nav-links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <h1 class="title-toggle glitch">Gilang Aditya</h1>
+            <p>Web Developer | Designer | Kreator</p>
+            <a href="javascript:void(0)" id="contactButton" class="btn">Fotofolio Saya</a>
+        </div>
+        <div class="floating-shapes">
+        </div>
+    </header> 
+
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Selamat datang di portofolio saya! Saya adalah seorang web developer yang bersemangat dalam menciptakan pengalaman digital yang menarik dan fungsional.</p>
+            <div class="about-info">
+                <div class="about-img">
+                    <img src="saya.jpg" alt="Gilang Aditya">
+                  </div>
+                <div class="about-text">
+                    <h3>Pengalaman Saya</h3>
+                    <p>Saya telah bekerja pada berbagai proyek web, mulai dari situs sederhana hingga aplikasi web kompleks. Saya selalu bersemangat untuk belajar teknologi baru dan meningkatkan keterampilan saya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-chart" class="skills-chart-section">
+        <h2>Grafik Keahlian Pemrograman</h2>
+        <canvas id="programmingSkillsChart"></canvas>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Proyek</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="project-list">
+                    </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Kontak</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>wahyugilangaditya27@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p>gilanggaditya.com/in/gilangaditya</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p>gilangaditya.com/gilangaditya</p>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <button type="button" id="submitButton" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+         <!-- Media Sosial -->
+         <div class="social-links">
+            <a href="https://www.instagram.com/usuallylangg" target="_blank" rel="noopener" title="Instagram" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@sayagaktaulahh" target="_blank" rel="noopener" title="TikTok" class="social-icon">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/Wahyu Gilang Aditya" target="_blank" rel="noopener" title="Facebook" class="social-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/+6285163011367" target="_blank" rel="noopener" title="WhatsApp" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>        
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 New website Gilang Aditya. All rights reserved.</p>
+        </div>
+         <!-- Tambahkan tombol dan jendela chatbot di sini -->
+         <div id="chatbotWindow" class="chatbot-window">
+            <div id="chatbotMessages" class="chatbot-messages"></div>
+            <input id="chatbotInput" type="text" placeholder="Type a message..." />
+        </div>
+        <button id="chatbotButton" class="chatbot-toggle">Chatbot</button>        
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script>
+        // Toggle Dark Mode
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    <script src="script1.js"></script>
+</body>
+</html>
