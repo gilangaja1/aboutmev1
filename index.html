@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilang Aditya - Web Developer Designer</title>
-    <link rel="stylesheet" href="styles.css?v=1.0">
+    <title>Gilang Aditya - Web Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://unpkg.com/locomotive-scroll"></script>
 </head>
-<!-- Pilihan Tema -->
-<div id="theme-selector" title="Pilih Tema">
-    <button class="theme-button" data-theme="default">Default</button>
-    <button class="theme-button" data-theme="dark">Dark</button>
-</div>
-
 <body id="main-container">
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Pilihan Tema -->
+    <div id="theme-selector" title="Pilih Tema">
+        <button class="theme-button" data-theme="default">Light</button>
+        <button class="theme-button" data-theme="dark">Dark</button>
+    </div>
+
     <div id="navbar">
         <div class="container">
             <a href="#header" class="logo">Gilang Aditya</a>
@@ -34,26 +38,26 @@
 
     <header id="header">
         <div class="container">
-            <h1 class="title-toggle glitch">Gilang Aditya</h1>
-            <p>Web Developer | Designer | Kreator</p>
-            <a href="javascript:void(0)" id="contactButton" class="btn">Fotofolio Saya</a>
+            <h1 class="title-toggle">Gilang Aditya</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Web Developer | UI/UX Designer | Creative Technologist</p>
+            <a href="#projects" id="portfolioButton" class="btn animate__animated animate__fadeIn animate__delay-2s">Lihat Karya Saya</a>
         </div>
-        <div class="floating-shapes">
-        </div>
+        <div class="floating-shapes" id="floating-shapes"></div>
     </header> 
-
 
     <section id="about" class="section">
         <div class="container">
             <h2>Tentang Saya</h2>
-            <p>Selamat datang di portofolio saya! Saya adalah seorang web developer yang bersemangat dalam menciptakan pengalaman digital yang menarik dan fungsional.</p>
+            <p>Selamat datang di portofolio digital saya! Saya adalah seorang web developer dan designer yang bersemangat dalam menciptakan pengalaman digital yang menarik, inovatif, dan efektif.</p>
             <div class="about-info">
                 <div class="about-img">
                     <img src="saya.jpg" alt="Gilang Aditya">
-                  </div>
+                </div>
                 <div class="about-text">
-                    <h3>Pengalaman Saya</h3>
-                    <p>Saya telah bekerja pada berbagai proyek web, mulai dari situs sederhana hingga aplikasi web kompleks. Saya selalu bersemangat untuk belajar teknologi baru dan meningkatkan keterampilan saya.</p>
+                    <h3>Profil Professional</h3>
+                    <p>Dengan pengalaman lebih dari 5 tahun di industri pengembangan web, saya telah bekerja pada berbagai proyek yang mencakup e-commerce, platform edukasi, aplikasi manajemen, dan situs web portofolio. Keahlian saya meliputi front-end development dengan fokus pada UI/UX yang responsif dan berorientasi pengguna.</p>
+                    <p>Saya percaya bahwa teknologi digital yang baik adalah yang tidak hanya fungsional tetapi juga estetik dan intuitif. Itulah mengapa saya selalu berupaya menggabungkan prinsip desain yang solid dengan kode yang bersih dan efisien dalam setiap proyek yang saya kerjakan.</p>
+                    <p>Ketika tidak sedang coding, saya menghabiskan waktu untuk mempelajari teknologi baru, berkolaborasi dengan sesama developer, dan berkontribusi untuk komunitas open source.</p>
                 </div>
             </div>
         </div>
@@ -61,47 +65,155 @@
 
     <section id="skills" class="section">
         <div class="container">
-            <h2>Keahlian</h2>
+            <h2>Keahlian Teknis</h2>
             <div class="skills-grid">
                 <div class="skill-item">
                     <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
+                    <h3>HTML5</h3>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
+                    <h3>CSS3/SASS</h3>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
+                    <h3>JavaScript ES6+</h3>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
+                    <h3>PHP & Laravel</h3>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-react"></i>
-                    <h3>React</h3>
+                    <h3>React & Redux</h3>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
+                    <h3>MySQL & MongoDB</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-figma"></i>
+                    <h3>Figma & UI/UX</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <h3>RESTful APIs</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Performance Optimization</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="skills-chart" class="skills-chart-section">
-        <h2>Grafik Keahlian Pemrograman</h2>
+        <h2>Grafik Penguasaan Teknologi</h2>
         <canvas id="programmingSkillsChart"></canvas>
     </section>
 
     <section id="projects" class="section">
         <div class="container">
-            <h2>Proyek</h2>
+            <h2>Proyek Unggulan</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper" id="project-list">
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="/api/placeholder/600/400" alt="E-Commerce Platform">
+                            </div>
+                            <div class="project-info">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Platform e-commerce lengkap dengan sistem pembayaran, manajemen produk, dan panel admin yang komprehensif.</p>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">Redux</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-link"></i> Demo</a>
+                                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="/api/placeholder/600/400" alt="Learning Management System">
+                            </div>
+                            <div class="project-info">
+                                <h3>Learning Management System</h3>
+                                <p>Platform pembelajaran online dengan fitur kursus, penilaian, forum diskusi, dan sertifikat interaktif.</p>
+                                <div class="tags">
+                                    <span class="tag">Laravel</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">WebSockets</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-link"></i> Demo</a>
+                                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="/api/placeholder/600/400" alt="Company Dashboard">
+                            </div>
+                            <div class="project-info">
+                                <h3>Company Dashboard</h3>
+                                <p>Dashboard analytics perusahaan dengan visualisasi data real-time, laporan, dan manajemen pengguna.</p>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">D3.js</span>
+                                    <span class="tag">Express</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-link"></i> Demo</a>
+                                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="/api/placeholder/600/400" alt="Travel App">
+                            </div>
+                            <div class="project-info">
+                                <h3>Travel App</h3>
+                                <p>Aplikasi perencanaan perjalanan dengan integrasi peta, cuaca, rekomendasi lokal, dan itinerary.</p>
+                                <div class="tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Google Maps API</span>
+                                    <span class="tag">GraphQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-link"></i> Demo</a>
+                                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -109,74 +221,53 @@
         </div>
     </section>
 
-
     <section id="contact" class="section">
         <div class="container">
-            <h2>Kontak</h2>
+            <h2>Hubungi Saya</h2>
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <p>wahyugilangaditya27@gmail.com</p>
+                    <p>gilang.aditya@email.com</p>
                 </div>
                 <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <p>gilanggaditya.com/in/gilangaditya</p>
+                    <i class="fas fa-phone"></i>
+                    <p>+62 812 3456 7890</p>
                 </div>
                 <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <p>gilangaditya.com/gilangaditya</p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jakarta, Indonesia</p>
                 </div>
             </div>
+
             <form id="contact-form">
-                <input type="text" name="name" placeholder="Nama" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Pesan" required></textarea>
-                <button type="button" id="submitButton" class="btn">Kirim Pesan</button>
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <input type="text" placeholder="Subjek">
+                <textarea placeholder="Pesan Anda" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
             </form>
+
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+            </div>
         </div>
-         <!-- Media Sosial -->
-         <div class="social-links">
-            <a href="https://www.instagram.com/usuallylangg" target="_blank" rel="noopener" title="Instagram" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@sayagaktaulahh" target="_blank" rel="noopener" title="TikTok" class="social-icon">
-                <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="https://www.facebook.com/Wahyu Gilang Aditya" target="_blank" rel="noopener" title="Facebook" class="social-icon">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://wa.me/+6285163011367" target="_blank" rel="noopener" title="WhatsApp" class="social-icon">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>        
-</section>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 New website Gilang Aditya. All rights reserved.</p>
+            <p>&copy; 2025 Gilang Aditya. All Rights Reserved.</p>
         </div>
-         <!-- Tambahkan tombol dan jendela chatbot di sini -->
-         <div id="chatbotWindow" class="chatbot-window">
-            <div id="chatbotMessages" class="chatbot-messages"></div>
-            <input id="chatbotInput" type="text" placeholder="Type a message..." />
-        </div>
-        <button id="chatbotButton" class="chatbot-toggle">Chatbot</button>        
     </footer>
 
-    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <button id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script>
-        // Toggle Dark Mode
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
-
-        darkModeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-        });
-    </script>
-    <script src="script1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
